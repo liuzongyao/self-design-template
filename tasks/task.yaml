@@ -9,7 +9,7 @@ metadata:
     alauda.io/description.en: HelloWorld
     alauda.io/readme.zh-CN: HelloWorld
     alauda.io/readme.en: HelloWorld
-    alauda.io/version: v0.1
+    alauda.io/version: v0.6
     alauda.io/style.icon:
   labels:
     catgory: CI
@@ -29,4 +29,4 @@ spec:
           zh-CN: "来访人名称"
           en: "guster name"
       required: true
-      default: "程静涛"
+      default: "zhongguoren"
