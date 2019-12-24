@@ -9,7 +9,7 @@ metadata:
     alauda.io/description.en: HelloWorld
     alauda.io/readme.zh-CN: HelloWorld
     alauda.io/readme.en: HelloWorld
-    alauda.io/version: v0.4
+    alauda.io/version: v0.5
     alauda.io/style.icon: build
   labels:
     category: CICD
@@ -31,7 +31,7 @@ spec:
           schema:
             type: string
           binding:
-            - HelloWorld.args.guesterName
+            - sayHelloWorld.args.guesterName
           display:
             type: string
             name:
