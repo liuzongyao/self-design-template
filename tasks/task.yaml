@@ -28,5 +28,3 @@ spec:
         name:
           zh-CN: "来访人名称"
           en: "guster name"
-      required: true
-      default: "zhongguoren"
