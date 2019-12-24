@@ -9,7 +9,7 @@ metadata:
     alauda.io/description.en: HelloWorld
     alauda.io/readme.zh-CN: HelloWorld
     alauda.io/readme.en: HelloWorld
-    alauda.io/version: v0.2
+    alauda.io/version: v0.3
     alauda.io/style.icon: build
   labels:
     category: CICD
