@@ -1,0 +1,38 @@
+apiVersion: devops.alauda.io/v1alpha1
+kind: PipelineTemplate
+metadata:
+  name: alaudaBuildImage
+  annotations:
+    alauda.io/displayName.zh-CN: HelloWorld
+    alauda.io/displayName.en: HelloWorld
+    alauda.io/description.zh-CN: HelloWorld
+    alauda.io/description.en: HelloWorld
+    alauda.io/readme.zh-CN: HelloWorld
+    alauda.io/readme.en: HelloWorld
+    alauda.io/version: v0.1
+    alauda.io/style.icon: build
+  labels:
+    category: CICD
+spec:
+  engine: graph
+  withSCM: true
+  stages:
+    - name: HelloWorld
+      tasks:
+        - name: HelloWorld
+          type: public/HelloWorld
+  arguments:
+    - displayName:
+        zh-CN: "基本信息"
+        en: "Basic Info"
+      items:
+        - name: "who"
+          schema:
+            type: string
+          binding:
+            - BuildImage.args.guesterName
+          display:
+            type: string
+            name:
+              zh-CN: "访客名称"
+              en: "guesterName"
