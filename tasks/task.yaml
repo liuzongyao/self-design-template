@@ -1,0 +1,32 @@
+apiVersion: devops.alauda.io/v1alpha1
+kind: PipelineTaskTemplate
+metadata:
+  name: sayHelloWorld
+  annotations:
+    alauda.io/displayName.zh-CN: HelloWorld
+    alauda.io/displayName.en: HelloWorld
+    alauda.io/description.zh-CN: HelloWorld
+    alauda.io/description.en: HelloWorld
+    alauda.io/readme.zh-CN: HelloWorld
+    alauda.io/readme.en: HelloWorld
+    alauda.io/version: v0.1
+    alauda.io/style.icon:
+  labels:
+    catgory: CI
+spec:
+  engine: gotpl
+  body: |+
+    script{
+      echo "hello {{.guesterName}}"
+    }
+  arguments:
+    - name: "guesterName"
+      schema:
+        type: string
+      display:
+        type: string
+        name:
+          zh-CN: "来访人名称"
+          en: "guster name"
+      required: true
+      default: "程静涛"
