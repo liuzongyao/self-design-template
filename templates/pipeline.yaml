@@ -30,7 +30,7 @@ spec:
           schema:
             type: string
           binding:
-            - BuildImage.args.guesterName
+            - HelloWorld.args.guesterName
           display:
             type: string
             name:
