@@ -20,6 +20,7 @@ spec:
     - name: HelloWorld
       tasks:
         - name: HelloWorld
+          kind: PipelineTaskTemplate
           type: public/HelloWorld
   arguments:
     - displayName:
