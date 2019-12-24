@@ -9,7 +9,7 @@ metadata:
     alauda.io/description.en: HelloWorld
     alauda.io/readme.zh-CN: HelloWorld
     alauda.io/readme.en: HelloWorld
-    alauda.io/version: v0.5
+    alauda.io/version: v0.6
     alauda.io/style.icon: build
   labels:
     category: CICD
@@ -19,7 +19,7 @@ spec:
   stages:
     - name: HelloWorld
       tasks:
-        - name: sayHelloWorld
+        - name: sayHelloWorld 
           kind: PipelineTaskTemplate
           type: public/HelloWorld
   arguments:
@@ -31,7 +31,7 @@ spec:
           schema:
             type: string
           binding:
-            - sayHelloWorld.args.guesterName
+            - sayHelloWorld.args.guesterName  #task template name
           display:
             type: string
             name:
