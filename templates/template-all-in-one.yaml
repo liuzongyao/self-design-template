@@ -8,7 +8,7 @@ metadata:
     alauda.io/displayName.en: "AlaudaAll-in-one"
     alauda.io/description.zh-CN: "Alauda ACP 2.X All-in-one"
     alauda.io/description.en: "Alauda ACP 2.X All-in-one"
-    alauda.io/version: "2.6.4"
+    alauda.io/version: "2.6.5"
     alauda.io/style.icon: golang,docker,sonarqube,kubernetes
   labels:
     category: Build
@@ -70,7 +70,7 @@ spec:
           default: "alauda-cicd"
           display:
             type: string
-            advanced: true
+            advanced: false
             name:
               zh-CN: "Jenkins Shared Library"
               en: "Jenkins Shared Library"
