@@ -58,7 +58,7 @@ spec:
             description:
               zh-CN: "使用 YAML 声明构建步骤"
               en: "Use yaml for build steps"
-          required: false
+          required: true
           value: "true"
         - name: "SharedLibrary"
           schema:
