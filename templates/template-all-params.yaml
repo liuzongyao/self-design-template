@@ -21,7 +21,7 @@ spec:
     - name: All
       tasks:
         - name: AllParametersTask
-          kind: ClusterPipelineTaskTemplate
+          kind: PipelineTaskTemplate
           type: AllParametersTask
   arguments:
     - displayName:
