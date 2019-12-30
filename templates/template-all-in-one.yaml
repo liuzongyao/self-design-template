@@ -8,7 +8,7 @@ metadata:
     alauda.io/displayName.en: "AlaudaAll-in-one"
     alauda.io/description.zh-CN: "Alauda ACP 2.X All-in-one"
     alauda.io/description.en: "Alauda ACP 2.X All-in-one"
-    alauda.io/version: "2.6.5"
+    alauda.io/version: "2.6.6"
     alauda.io/style.icon: golang,docker,sonarqube,kubernetes
   labels:
     category: Build
@@ -162,7 +162,7 @@ spec:
               zh-CN: "使用 Go Modules"
               en: "Use Go Modules"
           required: false
-          value: "false"
+          value: "true"
         - name: "GoProxy"
           schema:
             type: string
