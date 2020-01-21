@@ -1,14 +1,14 @@
 apiVersion: devops.alauda.io/v1alpha1
-kind: PipelineTemplate
+kind: ClusterPipelineTemplate
 metadata:
-  name: alaudaBuildImage
+  name: hellworld2
   annotations:
-    alauda.io/displayName.zh-CN: HelloWorld
-    alauda.io/displayName.en: HelloWorld
-    alauda.io/description.zh-CN: HelloWorld
-    alauda.io/description.en: HelloWorld
-    alauda.io/readme.zh-CN: HelloWorld
-    alauda.io/readme.en: HelloWorld
+    alauda.io/displayName.zh-CN: hellworld2
+    alauda.io/displayName.en: hellworld2
+    alauda.io/description.zh-CN: hellworld2
+    alauda.io/description.en: hellworld2
+    alauda.io/readme.zh-CN: hellworld2
+    alauda.io/readme.en: hellworld2
     alauda.io/version: v0.7
     alauda.io/style.icon: build
   labels:
@@ -20,7 +20,7 @@ spec:
     - name: HelloWorld
       tasks:
         - name: sayHelloWorld 
-          kind: PipelineTaskTemplate
+          kind: ClusterPipelineTaskTemplate
           type: public/HelloWorld
   arguments:
     - displayName:
