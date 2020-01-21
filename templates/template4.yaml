@@ -1,0 +1,41 @@
+apiVersion: devops.alauda.io/v1alpha1
+kind: ClusterPipelineTemplate
+metadata:
+  name: Helloworld4
+  annotations:
+    alauda.io/displayName.zh-CN: Helloworld4
+    alauda.io/displayName.en: Helloworld4
+    alauda.io/description.zh-CN: Helloworld4
+    alauda.io/description.en: Helloworld4
+    alauda.io/readme.zh-CN: Helloworld4
+    alauda.io/readme.en: Helloworld4
+    alauda.io/version: v0.7
+    alauda.io/style.icon: build
+  labels:
+    category: CICD
+spec:
+  engine: graph
+  withSCM: true
+  stages:
+    - name: Helloworld4
+      tasks:
+        - name: helloworld2 
+          kind: ClusterPipelineTaskTemplate
+          type: public/HelloWorld
+  arguments:
+    - displayName:
+        zh-CN: "基本信息"
+        en: "Basic Info"
+      items:
+        - name: "who"
+          schema:
+            type: string
+          binding:
+            - helloworld2.args.guesterName  #task template name
+          display:
+            type: string
+            name:
+              zh-CN: "访客名称"
+              en: "guesterName"
+          required: true
+          default: '访客名称'
