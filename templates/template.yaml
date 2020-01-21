@@ -1,14 +1,14 @@
 apiVersion: devops.alauda.io/v1alpha1
 kind: PipelineTemplate
 metadata:
-  name: alaudaBuildImage
+  name: Helloworld1
   annotations:
-    alauda.io/displayName.zh-CN: HelloWorld
-    alauda.io/displayName.en: HelloWorld
-    alauda.io/description.zh-CN: HelloWorld
-    alauda.io/description.en: HelloWorld
-    alauda.io/readme.zh-CN: HelloWorld
-    alauda.io/readme.en: HelloWorld
+    alauda.io/displayName.zh-CN: Helloworld1
+    alauda.io/displayName.en: Helloworld1
+    alauda.io/description.zh-CN: Helloworld1
+    alauda.io/description.en: Helloworld1
+    alauda.io/readme.zh-CN: Helloworld1
+    alauda.io/readme.en: Helloworld1
     alauda.io/version: v0.7
     alauda.io/style.icon: build
   labels:
@@ -17,9 +17,9 @@ spec:
   engine: graph
   withSCM: true
   stages:
-    - name: HelloWorld
+    - name: Helloworld1
       tasks:
-        - name: sayHelloWorld 
+        - name: Helloworld1 
           kind: PipelineTaskTemplate
           type: public/HelloWorld
   arguments:
@@ -31,7 +31,7 @@ spec:
           schema:
             type: string
           binding:
-            - sayHelloWorld.args.guesterName  #task template name
+            - Helloworld1.args.guesterName  #task template name
           display:
             type: string
             name:
