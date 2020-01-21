@@ -1,7 +1,7 @@
 apiVersion: devops.alauda.io/v1alpha1
 kind: ClusterPipelineTemplate
 metadata:
-  name: hellworld2
+  name: helloworld2
   annotations:
     alauda.io/displayName.zh-CN: hellworld2
     alauda.io/displayName.en: hellworld2
@@ -31,7 +31,7 @@ spec:
           schema:
             type: string
           binding:
-            - sayHelloWorld.args.guesterName  #task template name
+            - helloworld2.args.guesterName  #task template name
           display:
             type: string
             name:
