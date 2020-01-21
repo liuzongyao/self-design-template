@@ -1,0 +1,30 @@
+apiVersion: devops.alauda.io/v1alpha1
+kind: ClusterPipelineTaskTemplate
+metadata:
+  name: helloworld2
+  annotations:
+    alauda.io/displayName.zh-CN: helloworld2
+    alauda.io/displayName.en: helloworld2
+    alauda.io/description.zh-CN: helloworld2
+    alauda.io/description.en: helloworld2
+    alauda.io/readme.zh-CN: helloworld2
+    alauda.io/readme.en: helloworld2
+    alauda.io/version: v0.7
+    alauda.io/style.icon:
+  labels:
+    catgory: CI
+spec:
+  engine: gotpl
+  body: |+
+    script{
+      echo "hello {{.guesterName}}"
+    }
+  arguments:
+    - name: "guesterName"
+      schema:
+        type: string
+      display:
+        type: string
+        name:
+          zh-CN: "来访人名称"
+          en: "guster name"
