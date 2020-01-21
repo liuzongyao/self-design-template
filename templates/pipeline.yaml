@@ -19,7 +19,7 @@ spec:
   stages:
     - name: HelloWorld
       tasks:
-        - name: sayHelloWorld 
+        - name: helloworld2 
           kind: ClusterPipelineTaskTemplate
           type: public/HelloWorld
   arguments:
