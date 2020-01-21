@@ -39,4 +39,3 @@ spec:
               en: "guesterName"
           required: true
           default: '访客名称'
-© 2020 GitHub, Inc.
