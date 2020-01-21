@@ -19,7 +19,7 @@ spec:
   stages:
     - name: Helloworld1
       tasks:
-        - name: Helloworld1 
+        - name: helloworld1 
           kind: PipelineTaskTemplate
           type: public/HelloWorld
   arguments:
@@ -31,7 +31,7 @@ spec:
           schema:
             type: string
           binding:
-            - Helloworld1.args.guesterName  #task template name
+            - helloworld1.args.guesterName  #task template name
           display:
             type: string
             name:
