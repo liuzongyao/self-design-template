@@ -1,11 +1,11 @@
 apiVersion: devops.alauda.io/v1alpha1
-kind: PipelineTaskTemplate
+kind: ClusterPipelineTaskTemplate
 metadata:
-  name: sayHelloWorld
+  name: helloworld2
   annotations:
-    alauda.io/displayName.zh-CN: HelloWorld
-    alauda.io/displayName.en: HelloWorld
-    alauda.io/description.zh-CN: HelloWorld
+    alauda.io/displayName.zh-CN: helloworld2
+    alauda.io/displayName.en: helloworld2helloworld2
+    alauda.io/description.zh-CN: helloworld2
     alauda.io/description.en: HelloWorld
     alauda.io/readme.zh-CN: HelloWorld
     alauda.io/readme.en: HelloWorld
