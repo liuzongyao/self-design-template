@@ -1,14 +1,14 @@
 apiVersion: devops.alauda.io/v1alpha1
 kind: PipelineTaskTemplate
 metadata:
-  name: sayHelloWorld
+  name: hellworld1
   annotations:
-    alauda.io/displayName.zh-CN: HelloWorld
-    alauda.io/displayName.en: HelloWorld
-    alauda.io/description.zh-CN: HelloWorld
-    alauda.io/description.en: HelloWorld
-    alauda.io/readme.zh-CN: HelloWorld
-    alauda.io/readme.en: HelloWorld
+    alauda.io/displayName.zh-CN: hellworld1
+    alauda.io/displayName.en: hellworld1
+    alauda.io/description.zh-CN: hellworld1
+    alauda.io/description.en: hellworld1
+    alauda.io/readme.zh-CN: hellworld1
+    alauda.io/readme.en: hellworld1
     alauda.io/version: v0.7
     alauda.io/style.icon:
   labels:
