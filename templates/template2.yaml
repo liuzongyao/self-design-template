@@ -3,13 +3,13 @@ kind: PipelineTemplate
 metadata:
   name: Helloworld2
   annotations:
-    alauda.io/displayName.zh-CN: Helloworld2
-    alauda.io/displayName.en: Helloworld2
+    alauda.io/displayName.zh-CN: Helloworld100
+    alauda.io/displayName.en: Helloworld100
     alauda.io/description.zh-CN: Helloworld2
     alauda.io/description.en: Helloworld2
     alauda.io/readme.zh-CN: Helloworld2
     alauda.io/readme.en: Helloworld2
-    alauda.io/version: v0.7
+    alauda.io/version: v0.8
     alauda.io/style.icon: build
   labels:
     category: CICD
